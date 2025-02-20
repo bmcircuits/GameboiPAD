@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "conf_usb.h": "c",
+        "ui.h": "c",
+        "asf.h": "c",
+        "board.h": "c"
+    }
+}

@@ -1,0 +1,314 @@
+T8CB4 161:965.924   SEGGER J-Link V7.52a Log File
+T8CB4 161:965.990   DLL Compiled: Jul 28 2021 11:08:12
+T8CB4 161:966.007   Logging started @ 2025-02-16 03:05
+T8CB4 161:966.019 - 42.226ms
+T8CB4 161:966.036 JLINK_ExecCommand("device = ATSAMD11D14AS", ...). 
+T8CB4 161:966.126   Device "ATSAMD11D14AS" selected.
+T8CB4 161:966.304 - 0.263ms returns 0x00
+T8CB4 161:966.324 JLINK_GetHWStatus(...)
+T8CB4 161:966.449 - 0.140ms returns 0
+T8CB4 161:966.475 JLINK_ClrRESET()
+T8CB4 161:966.959 - 0.494ms
+T8CB4 161:971.701 JLINK_SetRESET()
+T8CB4 161:971.781 - 0.099ms
+T8CB4 161:976.702 JLINK_ClrRESET()
+T8CB4 161:976.947 - 0.261ms
+T8CB4 161:982.701 JLINK_ClrTCK()
+T8CB4 161:982.775 - 0.087ms returns 0
+T8CB4 161:987.703 JLINK_SetRESET()
+T8CB4 161:987.912 - 0.215ms
+T8CB4 161:992.705 JLINK_Clock()
+T8CB4 161:992.795 - 0.097ms returns 0
+T8CB4 161:999.708 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T8CB4 162:000.417 - 0.715ms returns 0x00
+T8CB4 162:000.429 JLINK_SetSpeed(50)
+T8CB4 162:000.561 - 0.133ms
+T8CB4 162:000.567 JLINK_CORESIGHT_Configure()
+T8CB4 162:009.026 - 8.465ms returns 0
+T8CB4 162:009.053 JLINK_CORESIGHT_WriteAPDPReg(DP reg 0x02, 0x00000000)
+T8CB4 162:010.066 - 1.016ms returns 0
+T8CB4 162:010.072 JLINK_CORESIGHT_WriteAPDPReg(AP reg 0x00, 0x23000040)
+T8CB4 162:011.111 - 1.041ms returns 0
+T8CB4 162:011.117 JLINK_CORESIGHT_WriteAPDPReg(AP reg 0x01, 0x41002101)
+T8CB4 162:012.120 - 1.005ms returns 0
+T8CB4 162:012.125 JLINK_CORESIGHT_ReadAPDPReg(AP reg 0x03)
+T8CB4 162:014.054   Value=0x10120000
+T8CB4 162:014.064 - 1.940ms returns 0
+T8CB4 162:014.097 JLINK_Halt()
+T8CB4 162:014.214   InitTarget() start
+T8CB4 162:014.221    J-Link Script File: Executing InitTarget()
+T8CB4 162:014.234   InitTarget()
+T8CB4 162:030.822   InitTarget() end
+T8CB4 162:036.573   Found SW-DP with ID 0x0BC11477
+T8CB4 162:054.150   DPIDR: 0x0BC11477
+T8CB4 162:054.167   Scanning AP map to find all available APs
+T8CB4 162:060.108   AP[1]: Stopped AP scan as end of AP map has been reached
+T8CB4 162:060.130   AP[0]: AHB-AP (IDR: 0x04770031)
+T8CB4 162:060.145   Iterating through AP map to find AHB-AP to use
+T8CB4 162:069.620   AP[0]: Core found
+T8CB4 162:069.635   AP[0]: AHB-AP ROM base: 0x41003000
+T8CB4 162:074.385   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T8CB4 162:074.398   Found Cortex-M0 r0p1, Little endian.
+T8CB4 162:174.935   -- Max. mem block: 0x00004598
+T8CB4 162:175.050   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T8CB4 162:180.917   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T8CB4 162:186.803   CPU_ReadMem(4 bytes @ 0xE0002000)
+T8CB4 162:192.580   FPUnit: 4 code (BP) slots and 0 literal slots
+T8CB4 162:192.596   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T8CB4 162:198.479   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T8CB4 162:204.345   CPU_ReadMem(4 bytes @ 0xE0001000)
+T8CB4 162:210.044   CPU_WriteMem(4 bytes @ 0xE0001000)
+T8CB4 162:215.957   CoreSight components:
+T8CB4 162:215.975   ROMTbl[0] @ 41003000
+T8CB4 162:215.982   CPU_ReadMem(64 bytes @ 0x41003000)
+T8CB4 162:235.548   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T8CB4 162:247.768   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T8CB4 162:247.789   ROMTbl[1] @ E00FF000
+T8CB4 162:247.798   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T8CB4 162:267.426   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T8CB4 162:279.647   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T8CB4 162:279.658   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T8CB4 162:291.840   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T8CB4 162:291.856   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T8CB4 162:304.219   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T8CB4 162:304.231   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T8CB4 162:316.427   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T8CB4 162:415.574 - 401.488ms returns 0x00
+T8CB4 162:415.604 JLINK_EraseChip()
+T8CB4 162:415.733   CPU_ReadMem(4 bytes @ 0x41006004)
+T8CB4 162:421.535   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T8CB4 162:427.223    -- --------------------------------------
+T8CB4 162:427.244    -- Start of determining dirty areas
+T8CB4 162:427.263    -- End of determining dirty areas
+T8CB4 162:427.305    -- Start of preparing flash programming
+T8CB4 162:427.316    -- Calculating RAM usage
+T8CB4 162:427.381    -- RAM usage = 2852 Bytes
+T8CB4 162:427.389    -- Preserving CPU registers
+T8CB4 162:427.412    -- Preparing memory
+T8CB4 162:427.421    -- Preparing target
+T8CB4 162:427.429    -- Downloading RAMCode
+T8CB4 163:116.310    -- Preparing RAMCode
+T8CB4 163:276.696    -- Checking target RAM
+T8CB4 163:301.104    -- End of preparing flash programming
+T8CB4 163:301.234   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\JLinkGUIServer.exe
+T8CB4 163:301.306   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink_V812d\JLinkGUIServer.exe
+T8CB4 163:301.330   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink_V812d\JLinkGUIServer.exe
+T8CB4 163:318.495   J-Link GUI Server info: "J-Link GUI server V8.12d "
+T8CB4 163:325.868    -- CPU speed could not be measured.
+T8CB4 163:325.882    -- Start of erasing sectors
+T8CB4 163:325.890    -- Erasing range 0x00000000 - 0x00003FFF ( 64 Sectors, 16 KB)
+T8CB4 163:451.881    -- End of erasing sectors
+T8CB4 163:451.902    -- Start of restoring
+T8CB4 163:451.909    -- Restoring RAMCode
+T8CB4 163:577.465    -- Restore target
+T8CB4 163:577.481    -- Restore memory
+T8CB4 163:577.487    -- Restoring CPU registers
+T8CB4 163:577.500    -- End of restoring
+T8CB4 163:577.542    -- Total time needed: 1.150s (Prepare: 0.898s, Compare: 0.000s, Erase: 0.126s, Program: 0.000s, Verify: 0.000s, Restore: 0.125s)
+T8CB4 163:583.229    -- --------------------------------------
+T8CB4 163:583.244    -- Start of determining dirty areas
+T8CB4 163:583.255    -- End of determining dirty areas
+T8CB4 163:583.261    -- Start of preparing flash programming
+T8CB4 163:583.267    -- Calculating RAM usage
+T8CB4 163:583.279    -- RAM usage = 2852 Bytes
+T8CB4 163:583.285    -- Preserving CPU registers
+T8CB4 163:583.301    -- Preparing memory
+T8CB4 163:583.308    -- Preparing target
+T8CB4 163:583.314    -- Downloading RAMCode
+T8CB4 164:229.807    -- Preparing RAMCode
+T8CB4 164:449.093    -- Checking target RAM
+T8CB4 164:473.502    -- End of preparing flash programming
+T8CB4 164:474.602    -- CPU speed could not be measured.
+T8CB4 164:474.616    -- Start of erasing sectors
+T8CB4 164:474.624    -- Erasing range 0x00804000 - 0x008040FF (  1 Sector, 256 Bytes)
+T8CB4 164:516.082    -- End of erasing sectors
+T8CB4 164:516.105    -- Start of restoring
+T8CB4 164:516.112    -- Restoring RAMCode
+T8CB4 164:641.655    -- Restore target
+T8CB4 164:641.672    -- Restore memory
+T8CB4 164:641.678    -- Restoring CPU registers
+T8CB4 164:641.692    -- End of restoring
+T8CB4 164:641.736    -- Total time needed: 1.058s (Prepare: 0.891s, Compare: 0.000s, Erase: 0.041s, Program: 0.000s, Verify: 0.000s, Restore: 0.125s)
+T8CB4 164:647.120 - 2231.525ms returns 0
+T9178 164:647.418 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T9178 164:648.225   [0]: USB, S/N: 50125258
+T9178 164:648.235 - 0.819ms returns 1
+T9178 164:648.286 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T9178 164:670.696 - 22.417ms returns 0
+T8CB4 164:670.723 JLINK_ExecCommand("Device = ATSAMD11D14AS", ...). 
+T8CB4 164:670.842   Device "ATSAMD11D14AS" selected.
+T8CB4 164:671.068 - 0.329ms returns 0x00
+T8CB4 164:671.079 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T8CB4 164:671.083 - 0.006ms returns 0x00
+T8CB4 164:671.088 JLINK_SetSpeed(4000)
+T8CB4 164:671.154 - 0.074ms
+T8CB4 164:671.168 JLINK_ResetPullsRESET(OFF)
+T8CB4 164:671.173 - 0.006ms
+T8CB4 164:671.178 JLINK_Connect()
+T8CB4 164:671.324   InitTarget() start
+T8CB4 164:671.331    J-Link Script File: Executing InitTarget()
+T8CB4 164:671.339   InitTarget()
+T8CB4 164:673.395   InitTarget() end
+T8CB4 164:673.955   Found SW-DP with ID 0x0BC11477
+T8CB4 164:675.510   DPIDR: 0x0BC11477
+T8CB4 164:675.527   AP map detection skipped. Manually configured AP map found.
+T8CB4 164:675.537   AP[0]: AHB-AP (IDR: Not set)
+T8CB4 164:676.008   AP[0]: Core found
+T8CB4 164:676.026   AP[0]: AHB-AP ROM base: 0x41003000
+T8CB4 164:676.226   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T8CB4 164:676.242   Found Cortex-M0 r0p1, Little endian.
+T8CB4 164:776.800   -- Max. mem block: 0x000040C0
+T8CB4 164:776.834   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T8CB4 164:777.079   CPU_ReadMem(4 bytes @ 0xE0002000)
+T8CB4 164:777.482   FPUnit: 4 code (BP) slots and 0 literal slots
+T8CB4 164:777.490   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T8CB4 164:777.702   CPU_ReadMem(4 bytes @ 0xE0001000)
+T8CB4 164:778.083   CoreSight components:
+T8CB4 164:778.094   ROMTbl[0] @ 41003000
+T8CB4 164:778.100   CPU_ReadMem(64 bytes @ 0x41003000)
+T8CB4 164:778.535   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T8CB4 164:778.824   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T8CB4 164:778.834   ROMTbl[1] @ E00FF000
+T8CB4 164:778.840   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T8CB4 164:779.253   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T8CB4 164:779.547   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T8CB4 164:779.554   CPU_WriteMem(4 bytes @ 0xE0001000)
+T8CB4 164:779.761   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T8CB4 164:780.171   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T8CB4 164:780.178   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T8CB4 164:780.468   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T8CB4 164:780.475   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T8CB4 164:780.797   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T8CB4 164:780.805 - 109.629ms returns 0x00
+T8CB4 164:780.857 JLINK_Halt()
+T8CB4 164:781.029 - 0.175ms returns 0x00
+T8CB4 164:781.736 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)
+T8CB4 164:781.749 - 0.015ms returns 0
+T8CB4 164:781.759 JLINK_ReadMemU32(0x41002018, 0x1 Items)
+T8CB4 164:781.772   CPU_ReadMem(4 bytes @ 0x41002018)
+T8CB4 164:781.981   Data:  03 01 03 10
+T8CB4 164:781.987 - 0.230ms returns 1 (0x1)
+T8CB4 164:789.712 JLINK_BeginDownload(Flags = 0x00000000)
+T8CB4 164:789.721 - 0.010ms
+T8CB4 164:789.732 JLINK_WriteMem(0x00000000, 0x3430 Bytes, ...)
+T8CB4 164:789.735   Data:  60 0A 00 20 81 2D 00 00 7D 2D 00 00 7D 2D 00 00 ...
+T8CB4 164:789.881   completely In flash
+T8CB4 164:789.897    -- Read from flash cache (13360 bytes @ 0x00000000)
+T8CB4 164:789.906 - 0.176ms returns 0x3430
+T8CB4 164:789.974 JLINK_WriteMem(0x00003430, 0xE0 Bytes, ...)
+T8CB4 164:789.980   Data:  01 00 00 00 91 03 00 00 ED 03 00 00 F9 03 00 00 ...
+T8CB4 164:789.988   completely In flash
+T8CB4 164:789.993    -- Read from flash cache (224 bytes @ 0x00003430)
+T8CB4 164:789.998 - 0.025ms returns 0xE0
+T425C 164:791.724 JLINK_IsHalted()
+T425C 164:791.737 - 0.015ms returns TRUE
+T425C 164:791.744 JLINK_GetMOEs(...)
+T425C 164:791.752   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T425C 164:791.976 - 0.239ms returns 0x01
+T425C 164:791.990 JLINK_ReadReg(R15 (PC))
+T425C 164:792.122   CPU_ReadMem(4 bytes @ 0x41006004)
+T425C 164:792.595   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T425C 164:792.838    -- --------------------------------------
+T425C 164:792.853   Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T425C 164:792.860    -- Start of determining dirty areas in flash cache
+T425C 164:792.876    -- End of determining dirty areas
+T425C 164:792.882    -- Start of preparing flash programming
+T425C 164:792.887    -- Calculating RAM usage
+T425C 164:792.896    -- RAM usage = 2852 Bytes
+T425C 164:792.901    -- Preserving CPU registers
+T425C 164:792.913    -- Preparing memory
+T425C 164:792.919    -- Preparing target
+T425C 164:792.924    -- Preserving target RAM temporarily used for programming
+T425C 164:803.363    -- Downloading RAMCode
+T425C 164:813.807    -- Preparing RAMCode
+T425C 164:817.861    -- Checking target RAM
+T425C 164:818.605    -- End of preparing flash programming
+T425C 164:819.644    -- CPU speed could not be measured.
+T425C 164:819.658    -- Start of comparing flash
+T425C 164:819.664    -- CRC check was estimated as fastest method
+T425C 164:836.169    -- Comparing range 0x0000 - 0x35FF (54 Sectors, 13 KiB), using multi-block CRC calculation
+T425C 164:842.961    -- CRC does not match for sectors 0-53
+T425C 164:842.974    -- End of comparing flash
+T425C 164:842.979    -- Start of erasing sectors
+T425C 164:842.984    -- End of erasing sectors
+T425C 164:842.989    -- Start of flash programming
+T425C 164:842.995    -- Programming range 0x00000000 - 0x000035FF ( 54 Sectors, 13 KB)
+T425C 164:929.915    -- End of flash programming
+T425C 164:929.935    -- 0x0000 - 0x35FF ( 54 Sectors, 13 KoB)
+T425C 164:929.943    -- Start of restoring
+T425C 164:929.949    -- Restoring RAMCode
+T425C 164:936.772    -- Restoring target memory
+T425C 164:946.264    -- Restore target
+T425C 164:946.278    -- Restore memory
+T425C 164:946.284    -- Restoring CPU registers
+T425C 164:946.297    -- End of restoring
+T425C 164:946.340    -- Bank 0 @ 0x00000000: 1 range affected (13824 bytes)
+T425C 164:946.353    -- Total: 0.153s (Prepare: 0.026s, Compare: 0.023s, Erase: 0.000s, Program & Verify: 0.091s, Restore: 0.011s)
+T425C 164:946.364    -- Program & Verify speed: 147 KiB/s
+T425C 164:952.184 - 160.204ms returns 0x00002F1A
+T8CB4 164:952.649 JLINK_EndDownload()
+T8CB4 164:952.663 - 0.017ms returns 0 (0x0)
+T8CB4 164:952.677 JLINK_ResetPullsRESET(ON)
+T8CB4 164:952.681 - 0.006ms
+T8CB4 164:952.686 JLINK_ResetNoHalt()
+T8CB4 164:952.843   InitTarget() start
+T8CB4 164:952.853    J-Link Script File: Executing InitTarget()
+T8CB4 164:952.861   InitTarget()
+T8CB4 164:955.283   InitTarget() end
+T8CB4 164:955.964   Found SW-DP with ID 0x0BC11477
+T8CB4 164:957.759   DPIDR: 0x0BC11477
+T8CB4 164:957.773   AP map detection skipped. Manually configured AP map found.
+T8CB4 164:957.782   AP[0]: AHB-AP (IDR: Not set)
+T8CB4 164:958.349   AP[0]: Core found
+T8CB4 164:958.362   AP[0]: AHB-AP ROM base: 0x41003000
+T8CB4 164:958.716   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T8CB4 164:958.729   Found Cortex-M0 r0p1, Little endian.
+T8CB4 165:059.843   -- Max. mem block: 0x000040C0
+T8CB4 165:059.871   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T8CB4 165:060.092   CPU_ReadMem(4 bytes @ 0xE0002000)
+T8CB4 165:060.372   FPUnit: 4 code (BP) slots and 0 literal slots
+T8CB4 165:060.385   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T8CB4 165:060.595   CPU_ReadMem(4 bytes @ 0xE0001000)
+T8CB4 165:060.866   CoreSight components:
+T8CB4 165:060.884   ROMTbl[0] @ 41003000
+T8CB4 165:060.891   CPU_ReadMem(64 bytes @ 0x41003000)
+T8CB4 165:061.311   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T8CB4 165:061.613   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T8CB4 165:061.628   ROMTbl[1] @ E00FF000
+T8CB4 165:061.635   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T8CB4 165:062.045   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T8CB4 165:062.373   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T8CB4 165:062.383   CPU_WriteMem(4 bytes @ 0xE0001000)
+T8CB4 165:062.590   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T8CB4 165:062.940   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T8CB4 165:062.952   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T8CB4 165:063.256   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T8CB4 165:063.262   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T8CB4 165:063.552   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T8CB4 165:063.562   JLINK_Reset()
+T8CB4 165:063.568     CPU_ReadMem(4 bytes @ 0x20000000)
+T8CB4 165:063.735     CPU_WriteMem(4 bytes @ 0x20000000)
+T8CB4 165:063.971     ResetTarget() start
+T8CB4 165:063.980      J-Link Script File: Executing ResetTarget()
+T8CB4 165:063.988     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T8CB4 165:064.211     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T8CB4 165:064.457     CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T8CB4 165:066.159     CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T8CB4 165:066.354     CPU_ReadMem(4 bytes @ 0x41002100)
+T8CB4 165:066.587     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T8CB4 165:066.860     ResetTarget() end
+T8CB4 165:069.103     CPU_WriteMem(4 bytes @ 0xE0002000)
+T8CB4 165:069.342     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T8CB4 165:069.582     CPU_ReadMem(4 bytes @ 0xE0001000)
+T8CB4 165:069.835     CPU_WriteMem(4 bytes @ 0xE0001000)
+T8CB4 165:070.090   - 6.530ms
+T8CB4 165:070.096   JLINK_Go()
+T8CB4 165:070.103     CPU_ReadMem(4 bytes @ 0xE0001000)
+T8CB4 165:070.333     CPU_WriteMem(4 bytes @ 0xE0001000)
+T8CB4 165:070.599     CPU_WriteMem(4 bytes @ 0xE0001004)
+T8CB4 165:071.204   - 1.109ms
+T8CB4 165:071.208 - 118.524ms
+T8CB4 165:073.765 JLINK_Close()
+T8CB4 165:087.093 - 13.337ms
+T8CB4 165:087.105   
+T8CB4 165:087.109   Closed
