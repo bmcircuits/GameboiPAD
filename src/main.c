@@ -60,7 +60,7 @@ static volatile bool main_b_generic_enable = false;
 
 void SysTick_Handler(void)
 {
-	// port_pin_toggle_output_level(PIN_PA22);
+	//port_pin_toggle_output_level(PIN_PA22);
 }
 
 /*! \brief Main function. Execution starts here.

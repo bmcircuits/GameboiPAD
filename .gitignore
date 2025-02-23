@@ -1,0 +1,7 @@
+*.log
+jlink.config
+
+# directories
+_build/
+Debug/
+cmake/
